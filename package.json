@@ -1,0 +1,37 @@
+{
+  "name": "yomichan-bccwj-frequency-dictionary",
+  "version": "1.0.0",
+  "description": "Source code for generating a BCCWJ frequency dictionary for Yomitan/Yomichan, supporting both short and long unit words.",
+  "main": "main.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node main.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "update:yomitan": "bash update-yomitan-language-files.sh",
+    "update:latest": "npx npm-check-updates@latest -u && rm -rf node_modules package-lock.json && npm install && npm run update:yomitan && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dvasq1995/yomichan-bccwj-frequency-dictionary.git"
+  },
+  "keywords": [
+    "yomitan",
+    "yomichan",
+    "bccwj",
+    "japanese",
+    "frequency-dictionary"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dvasq1995/yomichan-bccwj-frequency-dictionary/issues"
+  },
+  "homepage": "https://github.com/Dvasq1995/yomichan-bccwj-frequency-dictionary#readme",
+  "devDependencies": {
+    "@eslint/js": "latest",
+    "eslint": "latest",
+    "globals": "latest"
+  }
+}
